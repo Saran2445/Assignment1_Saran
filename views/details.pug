@@ -1,0 +1,16 @@
+extends common/layout
+
+block layout-content
+  .main-content
+    .game-detail-container
+      .game-image
+        img(src=game.img_url, alt=game.name)
+      .game-details
+        h1 #{game.name}
+        .moreInfo
+          p Genre: #{game.genre}
+          p Year: #{game.year}
+        h2 About
+        p #{game.about}
+        .buy-game
+          a.button(href="#") Buy Game

@@ -1,0 +1,16 @@
+extends common/layout
+
+block layout-content 
+  .main-content 
+    h1.page-title Only the Best Games
+    .games-container
+      each game in games
+        .game-card
+          a(href=`/gameDetails/${game.id}`) 
+            img(src=game.img_url, alt=game.name)
+          .card-content
+            a(href=`/gameDetails/${game.id}`)  
+                h2 #{game.name}
+                h2 #{game.genre}
+            p Year: #{game.year}
+            p About: #{game.about}

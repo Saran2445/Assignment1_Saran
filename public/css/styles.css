@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Set Poppins as the default font */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: rgb(247, 232, 251);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Override Bootstrap's default colors */
+:root {
+  --bs-primary:#090909cc; 
+  --bs-secondary: rgb(67, 51, 51); 
+  --bs-dark: #25252b; 
+  --bs-light: #00000006; 
+}
+
+/* Index page styles */
+#header {
+  background-color: rgb(169, 103, 169);
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#site-name {
+  margin: 0;
+  padding-left: 41%;
+
+}
+
+#site-name a {
+  color: var(--bs-dark); 
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+nav {
+    margin-left: auto;
+}
+  
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+  
+.nav-item a {
+    color: var(--bs-dark);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.nav-item a:hover {
+  background-color: var(--bs-secondary);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title{
+    color: var(--bs-dark); 
+    text-align: center;
+}
+/*------ place card styles -------*/
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.game-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-card img {
+  width: 100%;
+  height: 200px; /* Set a consistent height for all images */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  width: 100%;
+}
+
+.card-content h2 {
+  color: var(--bs-secondary);
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-content p {
+  color: var(--bs-dark);
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Details page styles*/
+.game-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.game-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.game-details {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-details h1 {
+  color: var(--bs-secondary);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.game-details .moreInfo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.game-details p {
+  color: var(--bs-dark);
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.game-details h2 {
+  color: var(--bs-secondary);
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* buy ticket button styles */
+.buy-game {
+  margin-top: 20px;
+}
+
+.buy-game .button {
+  background-color: var(--bs-secondary);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-game .button:hover {
+  background-color: var(--bs-primary);
+}
+
+/* about page atyles*/
+.about-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-header h1 {
+    color: var(--bs-secondary);
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .about-content p {
+    color: var(--bs-dark);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Style the contact section */
+  .contact-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .contact-section h2 {
+    color: var(--bs-secondary);
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    color: var(--bs-dark);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .contact-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-section li {
+    color: var(--bs-dark);
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-container h1 {
+    color: var(--bs-primary);
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Style the form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--bs-dark);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid var(--bs-light);
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--bs-dark);
+    background-color: #f8f9fa;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+
+/* footer styles */
+#footer {
+  background-color: rgb(169, 103, 169);;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .game-card {
+    width: 100%;
+  }
+
+  .game-details {
+    padding: 10px;
+  }
+
+  .team-member {
+    width: 45%;
+  }
+
+  .team-section h2,
+  .contact-section h2 {
+    font-size: 24px;
+  }
+
+  .contact-section p,
+  .contact-section li {
+    font-size: 16px;
+  }
+}

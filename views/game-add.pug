@@ -1,0 +1,22 @@
+extends common/layout 
+
+block layout-content 
+    .form-container
+        h1 Add New game
+        form(method="post" action="/admin/game/add/submit")
+            .form-group 
+                label(for="name") Name: 
+                input(type="string", id="name", name="gameName", placeholder="e.g. GTA")
+            .form-group 
+                label(for="genre") Genre: 
+                input(type="string", id="genre", name="gameGenre", placeholder="Horror")
+            .form-group 
+                label(for="year") City: 
+                input(type="string", id="year", name="gameYear", placeholder="2012")
+            .form-group 
+                label(for="imgUrl") Image URL: 
+                input(type="string", id="imgUrl", name="gameImgUrl", placeholder="The Image Url of the Game.")
+            .form-group 
+                label(for="about") About: 
+                textarea(type="text", id="about", name="gameAbout", placeholder="Provide a brief about the Game.", cols="30", rows="10")
+            button(type="submit") Add Game 
